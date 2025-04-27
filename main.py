@@ -124,3 +124,12 @@ def sentiment_map(doc,
     """
     ###TODO
 
+    tokens = doc.split()
+    result = []
+    for token in tokens:
+        if token in pos_terms:
+            result.append(('positive', 1))
+        elif token in neg_terms:
+            result.append(('negative', 1))
+    return result
+
