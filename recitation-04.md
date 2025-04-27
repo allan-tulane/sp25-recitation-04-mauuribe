@@ -69,3 +69,5 @@ Finally, we'll adapt our approach above to perform a simple type of sentiment an
 6. Complete the `sentiment_map` function to implement the above idea and test it with `test_sentiment_map`.
 
 7. Since the output here is similar to the word count problem, we will reuse `word_count_reduce` to compute the total number of positive and negative terms in a sequence of documents. Confirm your results work by running `test_sentiment`.
+
+
