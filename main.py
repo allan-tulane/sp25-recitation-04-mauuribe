@@ -37,7 +37,7 @@ def word_count_map(doc):
     [('i', 1), ('am', 1), ('sam', 1), ('i', 1), ('am', 1)]
     """
     ###TODO
-    
+    return [(token, 1) for token in doc.split()]
     
 
 
@@ -54,8 +54,8 @@ def word_count_reduce(group):
     NOTE: you should use call the `reduce` function here.
     """
     ###TODO
-    
-    
+    token, counts = group
+    return (token, reduce(plus, 0, counts))
 
 
 def iterate(f, x, a):
